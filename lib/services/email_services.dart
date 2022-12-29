@@ -6,6 +6,8 @@ class EmailVerifyService {
         Uri.https(Const.base_url, "/cirestapi/api/mahasiswa/sendmail"),
         headers: <String, String>{
           "Content-Type": "application/json; charset=UTF-8",
+          "AFL2-CloudComp-KEY": "AFL2-CloudComp"
+          // rijalu.aria@gmail.com
         },
         body: json.encode(<String, dynamic>{"email": email}));
   }
